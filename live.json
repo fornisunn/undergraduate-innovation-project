@@ -1,6 +1,6 @@
 ﻿{
-    "online":  false,
-    "public_url":  "",
-    "updated_at":  "2026-09-15T11:40:55.4488728Z",
-    "message":  "Live research demo is offline"
+    "online":  true,
+    "public_url":  "https://couple-maintained-acid-ideal.trycloudflare.com",
+    "updated_at":  "2026-09-15T12:17:23.2537101Z",
+    "message":  "Live research demo is open"
 }
