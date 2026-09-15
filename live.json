@@ -1,6 +1,6 @@
 ﻿{
-    "online":  false,
-    "public_url":  "",
-    "updated_at":  "2026-09-15T12:21:57.6483723Z",
-    "message":  "Live research demo is offline"
+    "online":  true,
+    "public_url":  "https://pentium-bottles-timothy-helping.trycloudflare.com",
+    "updated_at":  "2026-09-15T12:25:13.5357707Z",
+    "message":  "Live research demo is open"
 }
