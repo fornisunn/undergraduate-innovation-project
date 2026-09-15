@@ -1,14 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>本科生创新创业项目</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="大语言模型驱动的无负极锂电池电解液和集流体设计优化平台">
+  <title>AF-LMB Research Copilot</title>
+  <style>
+    :root{--ink:#102038;--muted:#617086;--line:#dfe7ef;--paper:#fff;--bg:#f4f7fa;--navy:#0b1930;--teal:#0e958b;--cyan:#20c6d7;--blue:#367bf5}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+    .shell{min-height:100vh;display:grid;grid-template-columns:270px 1fr}.side{position:sticky;top:0;height:100vh;padding:28px 22px;background:var(--navy);color:#dbe5f2}.brand{display:flex;align-items:center;gap:12px;font-weight:800}.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#45e2b8,#289bff);color:#08203d}.nav{margin-top:44px}.nav a{display:block;padding:12px 14px;margin:6px 0;border-radius:10px;color:#b6c3d4;text-decoration:none}.nav a:first-child,.nav a:hover{background:#182940;color:#fff}.foot{position:absolute;bottom:28px;left:24px;font-size:13px;color:#8fa0b6}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3dd6a5;margin-right:7px}
+    main{padding:42px clamp(24px,5vw,76px) 70px}.top{display:flex;justify-content:space-between;gap:28px;align-items:flex-start}.eyebrow{color:var(--teal);font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(34px,5vw,66px);line-height:1.05;max-width:850px;margin:18px 0}.hero p{max-width:750px;color:var(--muted);font-size:18px;line-height:1.75}.model{white-space:nowrap;background:#fff;border:1px solid var(--line);border-radius:999px;padding:10px 15px;color:var(--muted);font-size:13px}
+    .live{margin-top:34px;padding:26px;border:1px solid var(--line);border-radius:22px;background:var(--paper);box-shadow:0 16px 45px rgba(24,45,75,.08);display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}.live h2{margin:0 0 7px;font-size:22px}.live p{margin:0;color:var(--muted);line-height:1.6}.status{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:#66758a}.status i{width:10px;height:10px;border-radius:50%;background:#9ba7b5}.status.online{color:#087c5c}.status.online i{background:#2fc99a;box-shadow:0 0 0 7px rgba(47,201,154,.12)}.go{display:inline-flex;align-items:center;gap:10px;border:0;border-radius:12px;background:var(--navy);color:#fff;text-decoration:none;font-weight:800;padding:15px 20px;cursor:pointer}.go[aria-disabled="true"]{pointer-events:none;background:#d8e0e8;color:#8996a7}.updated{font-size:12px!important;margin-top:8px!important}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:24px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.stat strong{display:block;font-size:32px;margin-bottom:5px}.stat span{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:26px}.card h3{margin:0 0 18px}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.step{min-height:120px;border-radius:14px;padding:15px;background:#f2f7fb}.step b{display:block;color:var(--blue);font-size:12px;margin-bottom:25px}.step span{font-weight:700}.bars{display:grid;gap:15px}.barline{display:grid;grid-template-columns:105px 1fr 40px;gap:10px;align-items:center;font-size:13px}.track{height:8px;background:#e8eef4;border-radius:99px;overflow:hidden}.track i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--teal),var(--cyan))}.scope{display:flex;flex-wrap:wrap;gap:9px}.scope span{padding:9px 12px;border-radius:999px;background:#eaf7f5;color:#087b73;font-size:13px}.note{margin-top:18px;color:var(--muted);font-size:13px;line-height:1.7}.footer{margin-top:35px;padding-top:20px;border-top:1px solid var(--line);color:#8895a5;font-size:12px}
+    @media(max-width:980px){.shell{grid-template-columns:1fr}.side{position:relative;height:auto;padding:18px 22px}.nav,.foot{display:none}main{padding:28px 18px 50px}.top{display:block}.model{display:inline-block;margin-top:10px}.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.flow{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.live{grid-template-columns:1fr}.go{justify-content:center}.hero h1{font-size:38px}.stats{gap:9px}.stat{padding:17px}.stat strong{font-size:25px}.barline{grid-template-columns:85px 1fr 32px}}
+  </style>
 </head>
-
-<body>
-    <h1>本科生创新创业项目</h1>
-    <p>Undergraduate Innovation Project</p>
-    <p>网站部署成功。</p>
-</body>
-</html>
+<body><div class="shell">
+  <aside class="side"><div class="brand"><span class="mark">Li</span><span>AF-LMB Copilot</span></div><nav class="nav"><a href="#demo">现场问答</a><a href="#overview">研究概览</a><a href="#pipeline">技术路线</a><a href="#boundary">证据边界</a></nav><div class="foot"><span class="dot"></span>本地知识库 · 证据可追溯</div></aside>
+  <main>
+    <section class="top hero"><div><div class="eyebrow">Undergraduate Innovation Project</div><h1>无负极锂电池<br>研究智能助手</h1><p>以百篇论文证据为基础，连接 Neo4j 知识图谱与本地 Qwen，对电解液、集流体、界面机制和性能指标进行可追溯问答。</p></div><div class="model">Neo4j + Qwen 8B · Local</div></section>
+    <section class="live" id="demo"><div><div class="status" id="status"><i></i><span>正在检查现场系统…</span></div><h2 id="liveTitle">现场问答状态</h2><p id="liveText">正在读取最新展示状态。</p><p class="updated" id="updated"></p></div><a class="go" id="enter" href="#" aria-disabled="true" rel="noopener noreferrer">进入现场问答 <span>↗</span></a></section>
+    <section class="stats" id="overview"><div class="stat"><strong>100</strong><span>论文来源文件</span></div><div class="stat"><strong>1,179</strong><span>领域审核记录</span></div><div class="stat"><strong>402</strong><span>Qwen 候选节点</span></div><div class="stat"><strong>804</strong><span>候选溯源关系</span></div></section>
+    <section class="grid"><article class="card" id="pipeline"><h3>证据增强研究流程</h3><div class="flow"><div class="step"><b>01</b><span>论文解析<br>与页码定位</span></div><div class="step"><b>02</b><span>规则与 Qwen<br>协同抽取</span></div><div class="step"><b>03</b><span>Neo4j 图谱<br>实时检索</span></div><div class="step"><b>04</b><span>引用核验<br>安全回答</span></div></div><p class="note">每条展示证据保留论文题名、页码、原文及证据编号，支持从回答返回来源核查。</p></article><article class="card"><h3>知识范围</h3><div class="scope"><span>电解液体系</span><span>集流体设计</span><span>SEI/CEI 机制</span><span>库仑效率</span><span>容量保持率</span><span>测试条件</span></div><h3 style="margin-top:27px">数据层概览</h3><div class="bars"><div class="barline"><span>论文语料</span><div class="track"><i style="width:100%"></i></div><b>100</b></div><div class="barline"><span>候选节点</span><div class="track"><i style="width:68%"></i></div><b>402</b></div><div class="barline"><span>溯源关系</span><div class="track"><i style="width:88%"></i></div><b>804</b></div></div></article></section>
+    <section class="card note" id="boundary" style="margin-top:18px"><strong style="color:var(--ink)">科学边界：</strong>系统区分模型基础解释、自动抽取候选和经审核事实；无法由当前证据支持的结论会明确提示，不把相关性表述为因果性。</section><div class="footer">AF-LMB Research Copilot · 数据与模型运行于项目电脑，固定页面不公开论文全文、数据库凭据或访问码。</div>
+  </main>
+</div>
+<script>
+const statusEl=document.getElementById('status'),titleEl=document.getElementById('liveTitle'),textEl=document.getElementById('liveText'),updatedEl=document.getElementById('updated'),enterEl=document.getElementById('enter');
+function offline(message='当前未开放。答辩或现场展示开始后，此处会自动出现问答入口。'){statusEl.className='status';statusEl.querySelector('span').textContent='演示未开放';titleEl.textContent='现场问答暂未开放';textEl.textContent=message;updatedEl.textContent='';enterEl.href='#';enterEl.setAttribute('aria-disabled','true');enterEl.textContent='等待展示开放'}
+async function refresh(){try{const r=await fetch('live.json?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw new Error();const s=await r.json();if(s.online&&/^https:\/\/[a-z0-9-]+\.trycloudflare\.com\/?$/i.test(s.public_url||'')){statusEl.className='status online';statusEl.querySelector('span').textContent='现场系统在线';titleEl.textContent='公开研究问答已经开放';textEl.textContent='请使用展示人员提供的临时访问码进入。问答服务仅在本次展示期间运行。';updatedEl.textContent=s.updated_at?'状态更新：'+new Date(s.updated_at).toLocaleString('zh-CN'):'';enterEl.href=s.public_url;enterEl.removeAttribute('aria-disabled');enterEl.innerHTML='进入现场问答 <span>↗</span>'}else offline()}catch(e){offline('暂时无法读取现场状态，请稍后刷新或联系展示人员。')}}
+refresh();setInterval(refresh,15000);
+</script></body></html>
